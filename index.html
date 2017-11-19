@@ -183,29 +183,13 @@
     <script>
         "use strict";
         var fireballSize = 22;
-        var getFireballSpeed = function(left)
-        //        left это аргумент которых может быть много и пишутся через запятую
-        {
-            if (left == true) {
-                //                если аргумент соответствует выполняется то что в фигарных скобках иф это если то есть (если слева то...) тру писать не обязательно
-                return 5;
-                //                return это вернуть то что нужни при условии соответствия аргументу
-            } else {
-                //                else это иначе, в смысле отличается от того что нужно в аргументе и если так то возвращается то что ниже
-                return 2;
-            }
 
+
+
+        var getFireballSpeed = function(left) {
+
+            return left ? 5 : 2;
         };
-
-
-        //        внизу тоже самое только сокращённая запись
-
-        //        var getFireballSpeed = function(left) {
-        //            if (left) {
-        //                return 5;
-        //            } 
-        //            return 2;
-        //        };
 
 
         var wizardSpeed = 3;
